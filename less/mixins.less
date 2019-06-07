@@ -26,17 +26,32 @@
         font-size: 1.5rem;
     }    
 }
-.sign-up-btn() {
+
+.desktop-text-content() {
+    margin: 2.8rem 2.5rem;
+    h2 {
+        font-size: 4rem;
+    }
+
+    p {
+        margin: 2rem 0;
+        font-size: 1.6rem;
+    }
+}
+.sign-up-btn(@padding, @border-radius) {
     margin: 0 2.5rem;
-    padding: 4rem 0;
+    padding: @padding;
     text-align: center;
     text-decoration: none;
     color: white;
     background: black;
     font-size: 1.8rem;
-    border-radius: 1.5rem;
+    border-radius: @border-radius;
+    
     
 }
+
+
 /* End Main Content */
 
 /* Begin Utilities */

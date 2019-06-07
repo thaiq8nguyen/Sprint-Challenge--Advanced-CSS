@@ -7,7 +7,7 @@
   }
 
   @media @desktop {
-
+    max-width: 800px;
   }
 
   /* Begin Intro */
@@ -26,8 +26,7 @@
   @media @mobile {
     .intro {
       margin-top: 2rem;
-      display: flex;
-      flex-direction: column;
+      .flex-display(column);
       h1 {
         text-align: center;
         font-size: 6rem;
@@ -40,7 +39,7 @@
       .img {
         border-radius: 3rem;
       }
-      .intro-text-content {
+      .text-content {
         .mobile-text-content();  
       }
       
@@ -48,7 +47,17 @@
   }
 
   @media @desktop {
-
+    .intro {
+      h1 {
+        font-size: 5rem;
+      }
+      .nav-bar {
+        .nav-bar-desktop();
+      }
+      .text-content {
+        .desktop-text-content(); 
+      }
+    }
   }
 
   /* End Intro */
@@ -80,7 +89,9 @@
   // }
 
   @media @mobile {
-
+    .space-images {
+      display: none;
+    }
     .visit-planets {
       .flex-display(column);
       .img-content {
@@ -90,11 +101,27 @@
         .mobile-text-content();
       }
     }
-    
   }
-
   @media @desktop {
+    .space-images {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 2.5rem;
+      .space-image {
+        border-radius: 2rem;
+      }
 
+    }
+    .visit-planets {
+      border-bottom: 0.1px solid silver;
+      .img-content {
+        display: none;
+      }
+      .text-content {
+        .desktop-text-content();
+      }
+    }
+    
   }
 
   // .walk {
@@ -141,11 +168,35 @@
       }
     }
     .sign-up-btn {
-      .sign-up-btn();
+      .sign-up-btn(4rem 0, 1.5rem);
     }
   }
   @media @desktop {
-
+    .walk {
+      .walk-content {
+        .flex-display(row);
+        align-items: center;
+      
+        .img-content {
+          order: 2;
+          flex: 1;
+          img {
+            border-radius: 1.5rem;
+          }
+        }
+      .text-content {
+          order: 1;
+          flex: 1;
+          .desktop-text-content();
+        }
+      }
+      
+      .sign-up-btn {
+        .sign-up-btn(1rem 2rem, 0.5rem)
+          
+      }
+      
+    }
   }
 
   
@@ -158,6 +209,8 @@
     }
   }
   @media @desktop {
-    
+    .footer {
+      .footer-desktop();
+    } 
   }
 }// home
