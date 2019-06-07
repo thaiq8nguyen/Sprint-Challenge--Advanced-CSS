@@ -2,6 +2,15 @@
 
 .home {
 
+  @media @mobile {
+    max-width: 1000px;
+  }
+
+  @media @desktop {
+
+  }
+
+  /* Begin Intro */
   .intro {
 
     h2 {
@@ -13,6 +22,33 @@
     }
   
   }
+
+  @media @mobile {
+    .intro {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        text-align: center;
+        font-size: 6rem;
+        
+      }
+      .nav-bar {
+        .nav-bar-mobile();  
+      }
+
+      .img {
+        border-radius: 3rem;
+      }
+      
+    }
+  }
+
+  @media @desktop {
+
+  }
+
+  /* End Intro */
 
   .space-images {
     display: flex;
