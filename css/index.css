@@ -170,16 +170,6 @@ p {
   /* Begin Main Content */
 }
 @media (min-width: 500px) {
-  .home {
-    max-width: 1000px;
-  }
-}
-@media (min-width: 800px) {
-  .home {
-    max-width: 800px;
-  }
-}
-@media (min-width: 500px) {
   .home .intro {
     margin-top: 2rem;
     display: flex;
@@ -187,19 +177,19 @@ p {
   }
   .home .intro h1 {
     text-align: center;
-    font-size: 6rem;
+    font-size: 4rem;
   }
   .home .intro .nav-bar {
     width: 100%;
-    margin: 3.3rem 0;
-    padding: 0 15rem;
+    margin: 3.3rem 0rem;
+    padding: 0 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .home .intro .nav-bar .nav-item {
     text-decoration: none;
     color: black;
-    font-size: 3.2rem;
+    font-size: 1.6rem;
   }
   .home .intro .img {
     border-radius: 3rem;
@@ -248,7 +238,7 @@ p {
   .home .visit-planets .img-content img {
     width: 100%;
     height: 100%;
-    border-radius: 5rem;
+    border-radius: 2.5rem;
   }
   .home .visit-planets .text-content {
     margin: 3.6rem 2.5rem;
@@ -292,34 +282,39 @@ p {
     display: flex;
     flex-direction: column;
   }
-  .home .walk .img-content {
+  .home .walk .walk-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .home .walk .walk-content .img-content {
     text-align: center;
     margin: 0 3.3rem;
   }
-  .home .walk .img-content img {
+  .home .walk .walk-content .img-content img {
     width: 100%;
     height: 100%;
-    border-radius: 5rem;
+    border-radius: 2.5rem;
   }
-  .home .walk .text-content {
+  .home .walk .walk-content .text-content {
     margin: 3.6rem 2.5rem;
   }
-  .home .walk .text-content h2 {
+  .home .walk .walk-content .text-content h2 {
     font-size: 5rem;
   }
-  .home .walk .text-content p {
+  .home .walk .walk-content .text-content p {
     margin: 3.8rem 0;
     font-size: 1.5rem;
   }
   .home .sign-up-btn {
     margin: 0 2.5rem;
-    padding: 4rem 0;
+    padding: 2rem 2rem;
     text-align: center;
     text-decoration: none;
     color: white;
     background: black;
     font-size: 1.8rem;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
+    display: block;
   }
 }
 @media (min-width: 800px) {
@@ -356,13 +351,14 @@ p {
     background: black;
     font-size: 1.8rem;
     border-radius: 0.5rem;
+    display: inline;
   }
 }
 @media (min-width: 500px) {
   .home .footer {
     color: #22283B;
     background: #f4f4f4;
-    padding: 5rem 0;
+    padding: 2rem 0;
     border: 1px double #e0e0e0;
     border-radius: 1rem;
     display: flex;
@@ -371,7 +367,7 @@ p {
     margin-top: 5rem;
   }
   .home .footer p {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 @media (min-width: 800px) {

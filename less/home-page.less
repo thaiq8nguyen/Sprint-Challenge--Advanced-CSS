@@ -2,34 +2,19 @@
 
 .home {
 
-  @media @mobile {
-    max-width: 1000px;
-  }
-
-  @media @desktop {
-    max-width: 800px;
-  }
+  
 
   /* Begin Intro */
-  // .intro {
-
-  //   h2 {
-  //     padding: 15px;
-  //   }
-
-  //   p {
-  //     padding:0 15px;
-  //   }
   
-  // }
-
   @media @mobile {
     .intro {
       margin-top: 2rem;
       .flex-display(column);
       h1 {
+        
         text-align: center;
-        font-size: 6rem;
+        font-size: 4rem;
+        
         
       }
       .nav-bar {
@@ -63,31 +48,6 @@
   /* End Intro */
 
   /* Begin Main Content */
-  // .space-images {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   width: 100%;
-
-  //   img {
-  //     width: 28%;
-  //     margin: 20px 2.5%;
-  //     border-radius: 20px;
-  //     height: 100%;
-  //   }
-  // }
-
-  // .visit-planets {
-  //   padding: 15px;
-
-  //   h3 {
-  //     margin-top: 11px;
-  //   }
-
-  //   p {
-  //     margin-top: 13px;
-  //   }
-  // }
-
   @media @mobile {
     .space-images {
       display: none;
@@ -124,51 +84,23 @@
     
   }
 
-  // .walk {
-  //   margin-top: 60px;
-  //   border-top: 1px solid @main-border-color;
-  //   padding: 50px 60px;
-  //   display: flex;
-  //   justify-content: center;
-
-  //   .walk-text {
-  //     width: 50%;
-
-  //     h3 {
-  //       margin-bottom: 10px;
-  //     }
-
-  //     p {
-  //       margin-bottom: 26px;
-  //     }
-
-  //     .btn {
-  //     }
-  //   }
-
-  //   .walk-img {
-  //     width: 46%;
-  //     margin-left: 4%;
-      
-  //     img {
-  //       width: 100%;
-  //       height: auto;
-  //       border-radius: 10px;
-  //     }
-  //   }
-  // }
   @media @mobile {
     .walk {
       .flex-display(column);
-      .img-content {
-        .mobile-img-content();  
+      .walk-content {
+        .flex-display(column);
+        .img-content {
+          .mobile-img-content();  
+        }
+        .text-content {
+          .mobile-text-content();
+        }
       }
-      .text-content {
-        .mobile-text-content();
-      }
+      
     }
-    .sign-up-btn {
-      .sign-up-btn(4rem 0, 1.5rem);
+    .sign-up-btn {    
+      .sign-up-btn(2rem 2rem, 1rem);
+      display: block;
     }
   }
   @media @desktop {
@@ -192,16 +124,16 @@
       }
       
       .sign-up-btn {
-        .sign-up-btn(1rem 2rem, 0.5rem)
+        .sign-up-btn(1rem 2rem, 0.5rem);
+        display: inline;
           
       }
       
     }
   }
 
-  
-
   @media @mobile {
+    
     .footer {
       .footer-mobile();
       
