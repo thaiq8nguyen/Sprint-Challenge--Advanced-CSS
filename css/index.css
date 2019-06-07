@@ -210,6 +210,15 @@ footer {
   .home .intro .img {
     border-radius: 3rem;
   }
+  .home .intro .intro-text-content {
+    margin: 2rem 2.5rem;
+  }
+  .home .intro .intro-text-content h2 {
+    font-size: 5rem;
+  }
+  .home .intro .intro-text-content p {
+    font-size: 1.6rem;
+  }
 }
 .home .space-images {
   display: flex;
